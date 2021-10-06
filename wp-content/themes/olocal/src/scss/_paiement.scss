@@ -1,0 +1,32 @@
+.orderfinal {
+    padding-top:50px;
+    height: auto;
+    margin-right: 50px;
+    background-color: $light-blue;
+    border-radius: 10px;
+    font-weight: bold;
+    width:100vw;
+   }
+.list-group-item {
+    background-color: $light-blue;
+    text-transform: uppercase;
+}
+
+input {
+    margin-bottom:20px;
+    margin-left: 10px;
+    border-radius:10px;
+}
+.btn-light {
+    margin-top:20px;
+    text-transform: uppercase;
+    background: $light-blue;
+    font-weight: 700;
+    border-radius: 10px;
+    font-size:large;
+    
+    
+}
+.paiement {
+text-align: center;
+}

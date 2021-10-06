@@ -1,0 +1,36 @@
+.profile-card {
+    
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    margin: 2rem auto;
+    overflow: hidden;
+    width: 80%;
+
+    .picture {
+        background {
+            position: center;
+            size:cover;
+           
+        }
+        flex-grow: 2;
+       
+    }
+
+    .informations {
+        flex-grow: 0;
+
+        &__available-dot {
+            font-size: .7rem;
+            
+            &--available {
+                color: $green;
+            }
+
+            &--unavailable {
+                color: $red;
+            }
+        }
+    }
+}

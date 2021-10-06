@@ -1,0 +1,50 @@
+.slider {
+    overflow: hidden;
+    width: 100%;
+
+    &__comments {
+        display: flex;
+        flex: {
+            direction: row;
+            wrap: nowrap;
+        }
+        overflow: hidden;
+        scroll-behavior: smooth;
+        margin-bottom: 1rem;
+
+        & > li {
+            width: 100%;
+            flex: {
+                // pas d'expansion
+                grow: 0;
+                // pas de rétrécissement
+                shrink: 0;
+                // taille de base
+                basis: 100%;
+            };
+        }
+    }
+
+    &__nav-button {
+
+        background: $blue;
+        height: 100%;
+        margin: {
+            left: 1rem;
+            right: 1rem;
+        }
+        width: 3rem;
+        transition: background 0.8s;
+
+        &--active {
+            background: $dark-blue;
+        }
+    }
+
+    &__controls {
+        display: flex;
+        justify-content: center;
+        height: 0.4rem;
+        width: 100%;
+    }
+}

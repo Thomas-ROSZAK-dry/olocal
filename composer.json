@@ -1,0 +1,27 @@
+{
+    "name": "thoma/olocal",
+    "authors": [
+        {
+            "name": "TROSZAK",
+            "email": "thomasroszak81@gmail.com"
+        }
+    ],
+    "require": {
+        "johnpbloch/wordpress": "^5.8",
+        "wpackagist-plugin/query-monitor": "^3.7",
+        "wpackagist-plugin/fakerpress": "^0.5.1"
+    },
+    "repositories":[
+        {
+            "type":"composer",
+            "url":"https://wpackagist.org"
+        }
+    ],
+    "extra": {
+        "wordpress-install-dir": "wp",
+        "installer-paths": {
+            "content/plugins/{$name}/": ["type:wordpress-plugin"],
+            "content/themes/{$name}/": ["type:wordpress-theme"]
+        }
+    }
+}

@@ -1,0 +1,43 @@
+.excerpt {
+    background: {
+        color: $grey-blue;
+        image: url(https://source.unsplash.com/1600x900/?nature);
+        position: center;
+        size: cover;
+    }
+    color: $white;
+    padding: 2rem 1rem;
+    position: relative;
+    z-index: 10;
+
+
+    h3 {
+        border-bottom: 2px solid $white;
+        margin-bottom: 2rem;
+        font-weight: bold;
+        padding-bottom: 0.5rem;
+        text-transform: uppercase;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        // avec top, right, bottom et left à 0 => "occupe tout l'espace"
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: 0.7;
+        z-index: -1; // derrière le contenu
+       
+    }
+
+    // on parcourt la liste des couleurs disponibles dans $colors-bg-post
+    // pour chaque couleur, on récupère l'index dans $index et la couleur dans $color
+    @each $index, $color in $colors-bg-post {
+        &:nth-child(6n + #{$index})::after {
+            background-color: darken($color, 10%);
+        }
+    }
+
+}

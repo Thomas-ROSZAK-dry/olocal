@@ -1,0 +1,31 @@
+
+
+// variables :
+$blue: #6fb4fd;
+$purple: #8d82c4;
+$light-blue: #ebf0fb; // on utilise le kebab-case pour separer les mots dans un nom de variable
+$grey-blue: #242943;
+$dark-blue: #6489df;
+$red: #e56555;
+$yellow: #de9d5e;
+$green: #65b48a;
+$white: #ffffff;
+$black: #000000;
+$dark-grey: #333333;
+
+// fonts
+$main-font-family: "PT Sans", sans-serif;
+$title-font-family: "Roboto Slab", serif;
+$font-awesome-regular: 'Font Awesome 5 Free';
+$font-awesome-solid: 'Font Awesome 5 Free';
+$font-awesome-brands: 'Font Awesome 5 Brands';
+
+// liste des couleurs des excerpts
+$colors-bg-post: (
+    1: lighten($light-blue, 10%),
+    2: $purple,
+    3: $red,
+    4: $yellow,
+    5: $blue,
+    6: $green,
+);

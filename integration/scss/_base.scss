@@ -1,0 +1,15 @@
+body {
+    font-family: 'PT Sans', 'sans-serif';
+}
+.subscribe {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    background-color:$light-blue;
+    font-weight:bold;
+    padding-top: 25px;
+    padding-bottom:25px;
+    flex-direction: column;
+    
+    
+}

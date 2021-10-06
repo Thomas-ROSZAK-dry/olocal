@@ -1,0 +1,68 @@
+.footer {
+    background-color: $grey-blue;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    // height: 55vh;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+
+    &__info {
+        // pour tous les éléments .footer__info__item qui ne sont pas le dernier
+        &__item:not(:last-child) {
+            border-bottom: 1px solid lighten($grey-blue, 50%);
+        }
+
+        &__item {
+            display: flex;
+            padding: 1rem 0;
+
+            i {
+                color: lighten($grey-blue, 50%);
+                margin: {
+                    left: 2rem;
+                    right: 1rem;
+                }
+            }
+
+            h4 {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    &__menu {
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &__item {
+            padding: 0.5rem;
+            text-align: center;
+            width: 50%;
+
+            a {
+                color: $white;
+            }
+        }
+    }
+
+    &__social {
+
+        margin-top: 1rem;
+
+        &__list {
+            display: flex;
+            justify-content: center;
+        }
+
+        &__item {
+            padding: 0.5rem;
+
+            a {
+                color: $white;
+            }
+        }
+    }
+}

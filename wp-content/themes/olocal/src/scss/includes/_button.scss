@@ -1,0 +1,20 @@
+.button {
+    border: 3px solid $blue;
+    color: $blue;
+    display: inline-block;
+    font-weight: bold;
+    font-size: .8rem;
+    margin:0.5rem 0;
+    padding: 0.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+    // équivalent :
+    // .button.arrow => les éléments qui ont à la fois une classe button et une classe arrow
+    // ::after permet d'insérer du contenu que l'on peut styler après le contenu de l'élément
+    &-arrow::after {
+        content: "\f30b"; // content ne prend que tu texte, pas de html
+        font-family: $font-awesome-solid;
+        padding-left: 1em;
+    }
+}
